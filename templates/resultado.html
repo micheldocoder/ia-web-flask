@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultado da Animação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 { margin-bottom: 20px; }
+    video {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #0f0;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      background: #0f0;
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    a:hover { background: #00cc00; }
+  </style>
+</head>
+<body>
+  <h1>🎬 Sua Animação Está Pronta!</h1>
+  <video controls autoplay>
+    <source src="{{ video_path }}" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+  <br><br>
+  <a href="/">🔁 Fazer outro teste</a>
+</body>
+</html>
